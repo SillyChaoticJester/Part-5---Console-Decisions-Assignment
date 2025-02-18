@@ -20,36 +20,36 @@
             else if (userAngle == 90)
             {
 
-                Console.WriteLine("That would be East");
+                Console.WriteLine("That would be East!");
 
             }
             else if (userAngle == 180)
             {
 
-                Console.WriteLine();
+                Console.WriteLine("That would be South!");
 
             }
             else if (userAngle == 270)
             {
 
-                Console.WriteLine();
+                Console.WriteLine("That would be East!");
 
             }
             else if (userAngle >= 0 && userAngle <= 90)
             {
-                Console.WriteLine();
+                Console.WriteLine("That would be NorthEast!");
             }
             else if (userAngle >= 90 && userAngle <= 180)
             {
-                Console.WriteLine();
+                Console.WriteLine("That would be SouthEast!");
             }
             else if (userAngle >= 180 && userAngle <= 270)
             {
-                Console.WriteLine();
+                Console.WriteLine("That would be SouthWest!");
             }
             else if (userAngle >= 270 && userAngle <= 360)
             {
-                Console.WriteLine();
+                Console.WriteLine("That would be NorthWest!");
             }
         }
     }
