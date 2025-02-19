@@ -95,7 +95,12 @@
                 Console.WriteLine("Your fee is " + (minCost + 14.00));
             }
             //Problem Three
+            Console.WriteLine("Tell me how fast the wind is, and I'll tell you what category of hurricane it is");
+            hurricaneSpeed = Convert.ToInt32(Console.ReadLine());
+            switch (hurricaneSpeed)
+            {
 
+            }
         }
     }
 }
