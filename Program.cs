@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             int userAngle, hurricaneSpeed;
-            double minCost, userCost, maxCost, userMin;
+            double minCost, maxCost, userMin;
             minCost = 4.00;
             maxCost = 20.00;
 
@@ -66,7 +66,34 @@
             {
                 Console.WriteLine($"Your fee is {maxCost}");
             }
-
+            else if (userMin >= 60 && userMin < 120)
+            {
+                Console.WriteLine("Your fee is " + (minCost + 2.00));
+            }
+            else if (userMin >= 120 && userMin < 180)
+            {
+                Console.WriteLine("Your fee is " + (minCost + 4.00));
+            }
+            else if (userMin >= 180 && userMin < 240)
+            {
+                Console.WriteLine("Your fee is " + (minCost + 6.00));
+            }
+            else if (userMin >= 240 && userMin < 300)
+            {
+                Console.WriteLine("Your fee is " + (minCost + 8.00));
+            }
+            else if (userMin >= 300 && userMin < 360)
+            {
+                Console.WriteLine("Your fee is " + (minCost + 10.00));
+            }
+            else if (userMin >= 360 && userMin < 420)
+            {
+                Console.WriteLine("Your fee is " + (minCost + 12.00));
+            }
+            else if (userMin >= 420 && userMin < 480)
+            {
+                Console.WriteLine("Your fee is " + (minCost + 14.00));
+            }
             //Problem Three
 
         }
