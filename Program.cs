@@ -2,13 +2,9 @@
 {
     internal class Program
     {
-        static void Main(string[] args)
+        public static void Angles()
         {
-            int userAngle, hurriCategory;
-            double minCost, maxCost, userMin;
-            minCost = 4.00;
-            maxCost = 20.00;
-
+            int userAngle;
 
             //Problem One
             Console.WriteLine("Type down an angle between 0-360, and I'll tell you the direction");
@@ -54,46 +50,60 @@
                 Console.WriteLine("That would be NorthWest!");
             }
 
+        }
+
+        public static void ParkingFee()
+        {
+            decimal minCost, maxCost;
+            double userMin;
+            minCost = 4.00M;
+            maxCost = 20.00M;
+
             //Problem Two
             Console.WriteLine("How many minutes were you parked in the garage for?");
             userMin = Convert.ToDouble(Console.ReadLine());
 
             if (userMin >= 0 && userMin < 60)
             {
-                Console.WriteLine($"Your fee is {minCost}");
+                Console.WriteLine("Your fee is $" + minCost.ToString());
             }
             else if (userMin >= 480)
             {
-                Console.WriteLine($"Your fee is {maxCost}");
+                Console.WriteLine("Your fee is $" + maxCost.ToString());
             }
             else if (userMin >= 60 && userMin < 120)
             {
-                Console.WriteLine("Your fee is " + (minCost + 2.00));
+                Console.WriteLine("Your fee is $" + (minCost + 2.00M));
             }
             else if (userMin >= 120 && userMin < 180)
             {
-                Console.WriteLine("Your fee is " + (minCost + 4.00));
+                Console.WriteLine("Your fee is $" + (minCost + 4.00M));
             }
             else if (userMin >= 180 && userMin < 240)
             {
-                Console.WriteLine("Your fee is " + (minCost + 6.00));
+                Console.WriteLine("Your fee is $" + (minCost + 6.00M));
             }
             else if (userMin >= 240 && userMin < 300)
             {
-                Console.WriteLine("Your fee is " + (minCost + 8.00));
+                Console.WriteLine("Your fee is $" + (minCost + 8.00M));
             }
             else if (userMin >= 300 && userMin < 360)
             {
-                Console.WriteLine("Your fee is " + (minCost + 10.00));
+                Console.WriteLine("Your fee is $" + (minCost + 10.00M));
             }
             else if (userMin >= 360 && userMin < 420)
             {
-                Console.WriteLine("Your fee is " + (minCost + 12.00));
+                Console.WriteLine("Your fee is $" + (minCost + 12.00M));
             }
             else if (userMin >= 420 && userMin < 480)
             {
-                Console.WriteLine("Your fee is " + (minCost + 14.00));
+                Console.WriteLine("Your fee is $" + (minCost + 14.00M));
             }
+        }
+        public static void Hurricane()
+        {
+            int hurriCategory;
+
             //Problem Three
             Console.WriteLine("Tell me how what category of hurricane you want, and I'll tell you how fast the wind speed is:");
             hurriCategory = Convert.ToInt32(Console.ReadLine());
@@ -118,6 +128,10 @@
                     Console.WriteLine("That is not a Hurricane Catergory Number!");
                     break;
             }
+        }
+        static void Main(string[] args)
+        {
+            
         }
     }
 }
