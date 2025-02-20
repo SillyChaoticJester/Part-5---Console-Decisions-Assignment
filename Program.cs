@@ -131,7 +131,52 @@
         }
         static void Main(string[] args)
         {
-            
+            string choice = "";
+
+            while (choice != "q")
+            {
+                Console.Clear();
+                Console.WriteLine("Welcome to the most copied menu ever! Please choose an option!");
+                Console.WriteLine();
+                Console.WriteLine("1 - Fun with Angles");
+                Console.WriteLine("2 - Parking Fee Problems");
+                Console.WriteLine("3 - Speedy Hurricanes");
+                Console.WriteLine("Q - Quit. Bye bye.");
+                Console.WriteLine();
+                choice = Console.ReadLine().ToLower().Trim();
+                Console.WriteLine();
+
+                if (choice == "1")
+                {
+                    Angles();
+                    Console.WriteLine();
+                    Console.WriteLine("Press ENTER to Continue");
+                    Console.ReadLine();
+                }
+                else if (choice == "2") 
+                {
+                    ParkingFee();
+                    Console.WriteLine();
+                    Console.WriteLine("Press ENTER to Continue");
+                    Console.ReadLine();
+                }
+                else if (choice == "3")
+                {
+                    Hurricane();
+                    Console.WriteLine();
+                    Console.WriteLine("Press ENTER to Continue");
+                    Console.ReadLine();
+                }
+                else if (choice == "q")
+                {
+                    Console.WriteLine("Ok, bye bye");
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Choice! Press ENTER to Continue");
+                    Console.ReadLine();
+                }
+            }
         }
     }
 }
