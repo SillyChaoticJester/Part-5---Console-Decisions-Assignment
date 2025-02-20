@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            int userAngle, hurricaneSpeed;
+            int userAngle, hurriCategory;
             double minCost, maxCost, userMin;
             minCost = 4.00;
             maxCost = 20.00;
@@ -95,11 +95,28 @@
                 Console.WriteLine("Your fee is " + (minCost + 14.00));
             }
             //Problem Three
-            Console.WriteLine("Tell me how fast the wind is, and I'll tell you what category of hurricane it is");
-            hurricaneSpeed = Convert.ToInt32(Console.ReadLine());
-            switch (hurricaneSpeed)
+            Console.WriteLine("Tell me how what category of hurricane you want, and I'll tell you how fast the wind speed is:");
+            hurriCategory = Convert.ToInt32(Console.ReadLine());
+            switch (hurriCategory)
             {
-
+                case 1:
+                    Console.WriteLine("The wind speed would be 74-95 mph, 64-82 kt, or 119-153 km/hr");
+                    break;
+                case 2:
+                    Console.WriteLine("The wind speed would be 96-110 mph, 83-95 kt, or 154-177 km/hr");
+                    break;
+                case 3:
+                    Console.WriteLine("The wind speed would be 111-130 mph, 96-113 kt, or 178-209 km/hr");
+                    break;
+                case 4:
+                    Console.WriteLine("The wind speed would be 131-155 mph, 114-135 kt, or 210-249 km/hr");
+                    break;
+                case 5:
+                    Console.WriteLine("The wind speed would be 155+ mph, 135+ kt, or 249+ km/hr");
+                    break;
+                default:
+                    Console.WriteLine("That is not a Hurricane Catergory Number!");
+                    break;
             }
         }
     }
